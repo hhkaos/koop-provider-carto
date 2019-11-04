@@ -4,11 +4,14 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
+- [Live demos](#live-demos)
 - [How to build the service URL](#how-to-build-the-service-url)
   - [From a basic viewer](#from-a-basic-viewer)
   - [From a builder viewer](#from-a-builder-viewer)
   - [From public datasets](#from-public-datasets)
-- [Run locally](#run-locally)
+- [Setup](#setup)
+  - [Development mode](#development-mode)
+  - [Production mode](#production-mode)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -76,9 +79,43 @@ Preview on ArcGIS Online:
 
 [https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/common-data/twitter_t3chfest_reduced/FeatureServer/0](https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/common-data/twitter_t3chfest_reduced/FeatureServer/0)
 
-## Run locally
+## Setup
 
-Open a terminal, move to the project folder and execute:
+### Development mode
 
-* `npm install` to install dependencies
-* `npm start` to start the local server
+After cloning this repo you can start the provider in standalone mode opening a terminal, and running these commands from the project folder:
+
+```
+# install dependencies
+npm install
+
+# start development server
+npm start
+```
+
+### Production mode
+
+We recommend you to use [Koop-CLI](https://github.com/koopjs/koop-cli).
+
+> To install it run: `npm install -g @koopjs/cli`
+
+Then create a new Koop application:
+
+```
+# create a project folder and initialize it
+koop new app your-app-name
+
+# cd in the folder
+cd your-app-name
+```
+
+Next install this provider:
+
+```
+# install the provider and register it to the koop app
+koop add provider koop-provider-carto
+```
+
+And finally run the app:
+
+`koop serve`
