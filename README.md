@@ -14,6 +14,17 @@
 
 This provider allows you to transform layers hosted on Carto servers to ArcGIS Feature Layer so you can use it within ArcGIS SDKs, web maps and web scenes.
 
+## Live demos
+
+A demo server has been deployed to now.sh for testing purposes: [https://demo-app-nrqueszwed.now.sh/koop-provider-carto/](https://demo-app-nrqueszwed.now.sh/koop-provider-carto/)
+
+|Original dataset|Koop service|Preview in ArcGIS.com|
+|---|---|---|
+|[Fee leaf members](https://fee.carto.com/viz/f6a3b484-217e-11e5-92cb-0e853d047bba/embed_map?wmode=opaque)|[Raw data]([https://demo-app-nrqueszwed.now.sh/koop-provider-carto/rest/services/fee/leaf_members/FeatureServer/0/query)|[ArcGIS web map](https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=https://demo-app-nrqueszwed.now.sh/koop-provider-carto/rest/services/fee/leaf_members/FeatureServer/0)
+|[Fee green sites](https://fee.carto.com/builder/5459e116-668a-11e5-9e6d-0e5b35a699a7/embed)|[Raw data](https://demo-app-nrqueszwed.now.sh/koop-provider-carto/rest/services/fee/fee.green_key_sites/FeatureServer/0)|[ArcGIS web map](https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=https://demo-app-nrqueszwed.now.sh/koop-provider-carto/rest/services/fee/fee.green_key_sites/FeatureServer/0)|
+|[Twitter t3chfest reduced](https://common-data.cartodb.com/api/v2/sql?q=SELECT%20*%20FROM%20twitter_t3chfest_reduced)|[Raw data](https://demo-app-nrqueszwed.now.sh/koop-provider-carto/rest/services/common-data/twitter_t3chfest_reduced/FeatureServer/0)|[ArcGIS web map](https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=https://demo-app-nrqueszwed.now.sh/koop-provider-carto/rest/services/common-data/twitter_t3chfest_reduced/FeatureServer/0)|
+
+
 ## How to build the service URL
 
 ### From a basic viewer
@@ -41,8 +52,8 @@ So it will look like this:
 
 Now we are ready to load this data into a webmap removing the `query` operation, something like this:
 
-* [http://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/new_school_members/FeatureServer/0](http://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/new_school_members/FeatureServer/0)
-* [http://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/leaf_members/FeatureServer/0](http://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/leaf_members/FeatureServer/0)
+* [https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/new_school_members/FeatureServer/0](https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/new_school_members/FeatureServer/0)
+* [https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/leaf_members/FeatureServer/0](https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/leaf_members/FeatureServer/0)
 
 ### From a builder viewer
 
@@ -52,7 +63,7 @@ Open the source code a look for the `table_name` variable properties. This will 
 
 Preview on ArcGIS Online:
 
-[http://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/fee.green_key_sites/FeatureServer/0](http://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/fee.green_key_sites/FeatureServer/0)
+[https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/fee.green_key_sites/FeatureServer/0](https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/fee/fee.green_key_sites/FeatureServer/0)
 
 
 ### From public datasets
@@ -63,7 +74,7 @@ Like [this one called "twitter_t3chfest_reduced"](https://common-data.cartodb.co
 
 Preview on ArcGIS Online:
 
-[http://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/common-data/twitter_t3chfest_reduced/FeatureServer/0](http://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/common-data/twitter_t3chfest_reduced/FeatureServer/0)
+[https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/common-data/twitter_t3chfest_reduced/FeatureServer/0](https://www.arcgis.com/home/webmap/viewer.html?source=sd&panel=gallery&suggestField=true&url=http://localhost:8080/koop-provider-carto/rest/services/common-data/twitter_t3chfest_reduced/FeatureServer/0)
 
 ## Run locally
 
