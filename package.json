@@ -1,5 +1,5 @@
 {
-  "name": "@koopjs/provider-carto",
+  "name": "koop-provider-carto",
   "version": "0.1.0",
   "description": "Provider to transform layers hosted on Carto servers to ArcGIS Feature Layer",
   "author": "Raul Jimenez <raul.jimenez@esri.es>",

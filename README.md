@@ -32,7 +32,7 @@ If we use the `decodeURIComponent` JavaScript function to decode **this URL** we
 
 We just have to use this tableName and the subdomain of that URL to compose our koop URL like this:
 
-http://localhost:8080/koop-provider-carto/rest/services/**subdomain**,**tableName**/FeatureServer/0?f=json
+http://localhost:8080/koop-provider-carto/rest/services/**subdomain**/**tableName**/FeatureServer/0?f=json
 
 So it will look like this:
 
