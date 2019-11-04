@@ -1,6 +1,6 @@
 {
   "name": "koop-provider-carto",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provider to transform layers hosted on Carto servers to ArcGIS Feature Layer",
   "author": "Raul Jimenez <raul.jimenez@esri.es>",
   "bugs": {
