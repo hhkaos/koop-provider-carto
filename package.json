@@ -1,0 +1,36 @@
+{
+  "name": "@koopjs/provider-carto",
+  "version": "0.1.0",
+  "description": "Provider to transform layers hosted on Carto servers to ArcGIS Feature Layer",
+  "author": "Raul Jimenez <raul.jimenez@esri.es>",
+  "bugs": {
+    "url": "https://github.com/hhkaos/koop-provider-carto/issues"
+  },
+  "homepage": "https://github.com/hhkaos/koop-provider-carto",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha 'test/**/*.test.js'",
+    "start": "koop serve"
+  },
+  "dependencies": {
+    "config": "^3.1.0"
+  },
+  "devDependencies": {
+    "@koopjs/cli": "^0.4.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
+  "repository": "https://github.com/hhkaos/koop-provider-carto",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hhkaos/koop-provider-carto.git"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "koop",
+    "plugin",
+    "provider",
+    "carto",
+    "etl"
+  ]
+}
